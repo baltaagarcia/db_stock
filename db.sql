@@ -1,13 +1,12 @@
 CREATE DATABASE db_stock;
 USE db_stock;
 
-CREATE TABLE productos (
-    id INT AUTO_INCREMENT PRIMARY KEY,   -- ID autoincremental como clave primaria
-    nombre VARCHAR(255) NOT NULL,        -- Nombre del producto (hasta 255 caracteres)
-    precio DECIMAL(10, 2) NOT NULL,      -- Precio del producto (hasta 10 dígitos, 2 decimales)
-    cantidad INT NOT NULL,               -- Cantidad disponible del producto
-    categoria INT NOT NULL               -- Categoría como número (podría hacer referencia a otra tabla si es necesario)
-);
+CREATE TABLE productos (r
+    id INT AUTO_INCREMENT PRIMARY KEY,   
+    nombre VARCHAR(255) NOT NULL,        
+    precio DECIMAL(10, 2) NOT NULL,      
+    cantidad INT NOT NULL,               
+    categoria INT NOT NULL              
 
 INSERT INTO productos (nombre, precio, cantidad, categoria) VALUES
 ('Producto A', 100.50, 10, 1),
